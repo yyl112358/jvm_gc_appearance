@@ -9,7 +9,7 @@ public class LargeObjectDirectToTenured {
     /*
     执行时 jdk版本选择 1.8 使用如下参数可看到 gc 日志打印 如代码下方注释所示
     -XX:+UseSerialGC
-    -XX:PretenureSizeThreshold=5242880
+    -XX:PretenureSizeThreshold=5242880 (PS:此属性无法配置为 500m 1g 这种简写方式，必须给定精确值，单位为byte)
     -XX:+PrintGC
     -XX:+PrintGCDetails
     -XX:+PrintHeapAtGC
